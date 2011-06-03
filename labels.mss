@@ -44,7 +44,7 @@
 
 /* ---- LOCATION ---- */
 
-.location[PLACE='city'][zoom>5][zoom<14] {
+.location[PLACE='city'][zoom>6][zoom<14] {
   text-face-name:@font_reg;
   text-name:"[NAME]";
   text-fill:#444;

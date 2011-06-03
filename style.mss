@@ -51,6 +51,31 @@ wish to use OSM's land shapefiles. See the wiki for info:
   polygon-fill: @land;
 }
 
-#oil_sands {
-  polygon-fill: #555555;
+/* Add the provinces and countries, based on data from road_trip */
+#country_border::glow[zoom>2] {
+  line-color:#ddd;
+  line-opacity:0.33;
+  line-width:4;
+}
+
+#country_border { line-color:#fff; }
+#country_border[zoom<3] { line-width:0.4; }
+#country_border[zoom=3] { line-width:0.6; }
+#country_border[zoom=4] { line-width:0.8; }
+#country_border[zoom=5] { line-width:1.0; }
+
+#state_line::glow[ADM0_A3='USA'],
+#state_line::glow[ADM0_A3='CAN'] {
+  [zoom>2] {
+    line-color:#fff;
+    line-opacity:0.2;
+    line-width:3;
+  }
+}
+#state_line[ADM0_A3='USA'],
+#state_line[ADM0_A3='CAN'] {
+  [zoom>2] {
+    line-dasharray:2,2,10,2;
+    line-width:0.6;
+  }
 }
