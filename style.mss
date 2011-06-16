@@ -38,10 +38,29 @@ Map {
   polygon-fill:@water;
 }
 
+#rivers[zoom>=7][zoom<10] {
+  line-color:@water;
+  line-width:0.5;
+}
+
 .natural[TYPE='forest'],
 #park_polygons {
   polygon-fill:@forest;
+  polygon-opacity: 0.6;
 }
+
+// Commented out because this is very slow.
+.glacier { polygon-fill: #fff; polygon-opacity: 0.6; }
+// */
+
+#color-relief,
+#hill-shade,
+#slope-shade {
+    raster-scaling: bilinear;
+    raster-mode: multiply;
+}
+#hill-shade { raster-opacity: 0.6; }
+#slope-shade { raster-opacity: 0.4; }
 
 /* These are not used, but if customizing this style you may
 wish to use OSM's land shapefiles. See the wiki for info:
