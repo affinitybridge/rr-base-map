@@ -54,14 +54,14 @@ Map {
 .glacier { polygon-fill: #fff; polygon-opacity: 0.6; }
 */
 
-/*#color-relief,
+#color-relief,
 #hill-shade,
 #slope-shade {
     raster-scaling: bilinear;
     raster-mode: multiply;
 }
 #hill-shade { raster-opacity: 0.3; }
-#slope-shade { raster-opacity: 0.4; }*/
+#slope-shade { raster-opacity: 0.4; }
 
 /* These are not used, but if customizing this style you may
 wish to use OSM's land shapefiles. See the wiki for info:
@@ -100,13 +100,24 @@ wish to use OSM's land shapefiles. See the wiki for info:
   }
 }
 
-#districts[zoom>2][zoom<10] {
-  line-width: 0.6;
-  line-color: #000;
-  text-face-name:@font_reg;
-  text-halo-radius:1;
-  text-placement:interior;
-  text-name:"[DIST_NAM]";
-  text-fill:spin(darken(@motorway,70),-15);
-  text-halo-fill:lighten(@motorway,8);
+#districts[zoom<10] {
+  [zoom>2] {
+    line-width: 0.6;
+    line-color: #000;
+  }
+  [zoom>5] {
+    text-face-name:@font_reg;
+    text-halo-radius:1;
+    text-placement:interior;
+    text-transform:uppercase;
+    text-name:"[DIST_NAM]";
+    text-fill:spin(darken(@motorway,70),-15);
+    text-halo-fill:lighten(@motorway,8);
+    [zoom=7] { text-size:11 }
+    [zoom=8] { text-size:12; }
+    [zoom=9] { 
+      text-size: 13;
+      text-character-spacing:2;
+    }
+  }
 }

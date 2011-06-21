@@ -50,7 +50,10 @@
   text-fill:#444;
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
-  text-transform:uppercase;
+  [zoom>6][zoom<12] {
+    text-dy: -4;
+    point-file: url(../resources/icons/circle2-7.png);
+  }  
   [zoom=11] {
     text-size:12;
     text-character-spacing:2;
@@ -71,8 +74,11 @@
   text-fill:#444;
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
-  text-transform:uppercase;
   text-size:9;
+  [zoom>8][zoom<12] {
+    text-dy: -4;
+    point-file: url(../resources/icons/circle-7.png);
+  }  
   [zoom=11] {
     text-size:10;
     text-character-spacing:1;
