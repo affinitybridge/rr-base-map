@@ -1,8 +1,8 @@
 {
   "_center": {
-    "lat": 47.674211912694,
-    "lon": -123.32462176680404,
-    "zoom": 10
+    "lat": 59.34284877093243,
+    "lon": -122.83573016524156,
+    "zoom": 7
   },
   "_format": "png",
   "_interactivity": false,
@@ -37,23 +37,23 @@
     },
     {
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/bc-slope-3785.tif",
-        "type": "gdal"
-      },
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "id": "slope-shade",
-      "name": "slope-shade",
-      "class": "",
-      "geometry": "raster"
-    },
-    {
-      "Datasource": {
         "file": "http://localhost:8889/api/Library/data/files/bc-hillshade-3785.tif",
         "type": "gdal"
       },
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "id": "hill-shade",
       "name": "hill-shade",
+      "class": "",
+      "geometry": "raster"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/bc-slopeshade-3785.tif",
+        "type": "gdal"
+      },
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "id": "slope-shade",
+      "name": "slope-shade",
       "class": "",
       "geometry": "raster"
     },
@@ -98,6 +98,17 @@
       "srs": "",
       "id": "park_polygons",
       "name": "park_polygons",
+      "class": "",
+      "geometry": "polygon"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/FADM_DIST-districts.zip",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "districts",
+      "name": "districts",
       "class": "",
       "geometry": "polygon"
     },
