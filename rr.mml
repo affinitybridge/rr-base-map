@@ -1,11 +1,17 @@
 {
   "_center": {
-    "lat": 56.261298781206676,
-    "lon": -121.17103323340238,
-    "zoom": 10
+    "lat": 56.231874529885516,
+    "lon": -121.28398641943753,
+    "zoom": 11
   },
   "_format": "png",
-  "_interactivity": false,
+  "_interactivity": {
+    "layer": "resource-roads",
+    "key_name": "DGTLRDTLSL",
+    "template_teaser": "[DGTLRDTLSL]<br />\n[FTRCD]<br />\n[FTRTP]<br />\n[RDSRFC]<br />\n[GMTRSRC]<br />\n[DTSPPLR]<br />\n[DTSPPLRNT]<br />\n[GMTRCPTRTC]<br />\n[DTCPTRDT]<br />\n[OBJECTID]",
+    "template_full": "",
+    "template_location": ""
+  },
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
@@ -142,7 +148,7 @@
       "srs": "",
       "id": "resource-roads",
       "name": "resource-roads",
-      "class": "",
+      "class": "resource-roads",
       "geometry": "linestring"
     },
     {
