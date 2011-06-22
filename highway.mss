@@ -479,3 +479,39 @@
   marker-fill:spin(darken(@motorway,50),-10);
   marker-opacity:0.8;
 }
+
+#resource-roads[ROAD_CLASS=''][zoom>10] {
+  line-width: 0.1;
+  line-color: #555;
+}
+
+#resource-roads[ROAD_CLASS=''][zoom>11] {
+  line-width: 0.25;
+  line-color: #555;
+  [DTSPPLRNT!='geographicDataBC'] {
+    text-face-name:@font_reg;
+    text-halo-radius:1;
+    text-placement:line;
+    text-fill:spin(darken(@motorway,70),-15);
+    text-halo-fill:lighten(@motorway,8);
+    text-name:"[DTSPPLRNT]";
+  }
+}
+#resource-roads[ROAD_CLASS=''][zoom>12] {
+  line-width: 0.6;
+  line-color: #555;
+}
+
+#resource-roads[zoom>10][ROAD_CLASS='resource'] {
+  line-width: 0.6;
+  line-color: #555;
+  text-face-name:@font_reg;
+  text-halo-radius:1;
+  text-placement:line;
+  text-fill:spin(darken(@motorway,70),-15);
+  text-halo-fill:lighten(@motorway,8);
+  text-name:"[DTSPPLRNT] - [DGTLRDTLSL]";
+  [RDNMFLL!=''] {
+    text-name:"[RDNMFLL] - [DTSPPLRNT] - [DGTLRDTLSL]";
+  }
+}

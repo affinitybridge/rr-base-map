@@ -1,8 +1,8 @@
 {
   "_center": {
-    "lat": 56.23489191356603,
-    "lon": -121.5077577531321,
-    "zoom": 8
+    "lat": 56.261298781206676,
+    "lon": -121.17103323340238,
+    "zoom": 10
   },
   "_format": "png",
   "_interactivity": false,
@@ -131,6 +131,17 @@
       "srs": "",
       "id": "state_line",
       "name": "state_line",
+      "class": "",
+      "geometry": "linestring"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/DRA_LINESP_DPC-roads-peace.zip",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "resource-roads",
+      "name": "resource-roads",
       "class": "",
       "geometry": "linestring"
     },
