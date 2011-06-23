@@ -78,7 +78,7 @@ wish to use OSM's land shapefiles. See the wiki for info:
   line-width:4;
 }
 
-#country_border { line-color:#fff; }
+#country_border { line-color:#000; }
 #country_border[zoom<3] { line-width:0.4; }
 #country_border[zoom=3] { line-width:0.6; }
 #country_border[zoom=4] { line-width:0.8; }
@@ -100,24 +100,28 @@ wish to use OSM's land shapefiles. See the wiki for info:
   }
 }
 
-#districts[zoom<10] {
-  [zoom>2] {
-    line-width: 0.6;
-    line-color: #000;
-  }
+.district[zoom>3][zoom<10] {
+  line-color: #555;
+  line-width: 0.1;
+  [zoom>4] { line-width: 0.25; }
+  [zoom>5] { line-width: 0.6; }
+}
+
+.district-label[zoom<10] {
   [zoom>5] {
     text-face-name:@font_reg;
-    text-halo-radius:1;
+    text-halo-radius:2;
     text-placement:interior;
     text-transform:uppercase;
     text-name:"[DIST_NAM]";
     text-fill:spin(darken(@motorway,70),-15);
     text-halo-fill:lighten(@motorway,8);
-    [zoom=7] { text-size:11 }
-    [zoom=8] { text-size:12; }
-    [zoom=9] { 
-      text-size: 13;
-      text-character-spacing:2;
-    }
+    /*text-min-padding: 1;*/
+  }
+  [zoom=7] { text-size:11; }
+  [zoom=8] { text-size:12; }
+  [zoom=9] { 
+    text-size: 13;
+    text-character-spacing:2;
   }
 }

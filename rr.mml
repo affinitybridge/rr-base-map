@@ -1,8 +1,8 @@
 {
   "_center": {
-    "lat": 56.231874529885516,
-    "lon": -121.28398641943753,
-    "zoom": 11
+    "lat": 50.71121219361943,
+    "lon": -126.57664999365625,
+    "zoom": 7
   },
   "_format": "png",
   "_interactivity": {
@@ -109,17 +109,6 @@
     },
     {
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/FADM_DIST-districts.zip",
-        "type": "shape"
-      },
-      "srs": "",
-      "id": "districts",
-      "name": "districts",
-      "class": "",
-      "geometry": "polygon"
-    },
-    {
-      "Datasource": {
         "file": "http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_0_boundary_lines_land.zip",
         "type": "shape"
       },
@@ -172,6 +161,28 @@
         "type": "shape"
       },
       "geometry": "linestring"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/FADM_DIST-titles-simplified-fixed.zip",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "districts",
+      "name": "districts",
+      "class": "district",
+      "geometry": "polygon"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/FADM_DIST-titles-simplified-fixed.zip",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "district-label",
+      "name": "district-label",
+      "class": "district-label",
+      "geometry": "polygon"
     },
     {
       "Datasource": {
