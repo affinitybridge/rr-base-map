@@ -117,6 +117,7 @@ wish to use OSM's land shapefiles. See the wiki for info:
     text-fill:spin(darken(@motorway,70),-15);
     text-halo-fill:lighten(@motorway,8);
     /*text-min-padding: 1;*/
+    text-wrap-width: 100;
   }
   [zoom=7] { text-size:11; }
   [zoom=8] { text-size:12; }
