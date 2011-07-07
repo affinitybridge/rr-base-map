@@ -50,9 +50,7 @@ Map {
   polygon-opacity: 0.6;
 }
 
-/*
-.glacier { polygon-fill: #fff; polygon-opacity: 0.6; }
-*/
+/*.glacier[zoom>7] { polygon-fill: #fff; polygon-opacity: 0.5; }*/
 
 #color-relief,
 #hill-shade,
@@ -60,8 +58,12 @@ Map {
     raster-scaling: bilinear;
     raster-mode: multiply;
 }
-#hill-shade { raster-opacity: 0.3; }
-#slope-shade { raster-opacity: 0.4; }
+#hill-shade {
+  raster-opacity: 0.3;
+}
+#slope-shade {
+  raster-opacity: 0.4;
+}
 
 /* These are not used, but if customizing this style you may
 wish to use OSM's land shapefiles. See the wiki for info:
@@ -117,7 +119,8 @@ wish to use OSM's land shapefiles. See the wiki for info:
     text-fill:spin(darken(@motorway,70),-15);
     text-halo-fill:lighten(@motorway,8);
     /*text-min-padding: 1;*/
-    text-wrap-width: 100;
+    text-wrap-width: 50;
+    text-line-spacing: 5;
   }
   [zoom=7] { text-size:11; }
   [zoom=8] { text-size:12; }
@@ -125,4 +128,8 @@ wish to use OSM's land shapefiles. See the wiki for info:
     text-size: 13;
     text-character-spacing:2;
   }
+}
+
+.district[ORG_UNIT='DPC'] {
+  polygon-pattern-file:url(../resources/textures/paperfolds_256.png.png);
 }

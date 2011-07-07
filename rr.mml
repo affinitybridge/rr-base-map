@@ -1,7 +1,7 @@
 {
   "_center": {
-    "lat": 50.71121219361943,
-    "lon": -126.57664999365625,
+    "lat": 55.852934933723844,
+    "lon": -121.84154257178125,
     "zoom": 7
   },
   "_format": "png",
@@ -65,7 +65,7 @@
     },
     {
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/FWGLCRSPL-glacier.zip",
+        "file": "http://localhost:8889/api/Library/data/files/FWGLCRSPL-glacier-simplified-2.zip",
         "type": "shape"
       },
       "srs": "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs ",
@@ -216,6 +216,18 @@
         "type": "shape"
       },
       "geometry": "linestring"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/RadioFrequency_June2_2010.kml",
+        "type": "ogr",
+        "layer_by_index": 0
+      },
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "id": "radio",
+      "name": "radio",
+      "class": "",
+      "geometry": "polygon"
     }
   ]
 }

@@ -50,6 +50,8 @@
   text-fill:#444;
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
+  text-wrap-width: 50;
+  text-line-spacing: 5;
   [zoom>6][zoom<12] {
     text-dy: -4;
     point-file: url(../resources/icons/circle2-7.png);
