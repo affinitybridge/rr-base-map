@@ -1,14 +1,14 @@
 {
   "_center": {
-    "lat": 55.852934933723844,
-    "lon": -121.84154257178125,
-    "zoom": 7
+    "lat": 56.28531737396626,
+    "lon": -121.24364599585347,
+    "zoom": 13
   },
   "_format": "png",
   "_interactivity": {
     "layer": "resource-roads",
     "key_name": "DGTLRDTLSL",
-    "template_teaser": "[DGTLRDTLSL]<br />\n[FTRCD]<br />\n[FTRTP]<br />\n[RDSRFC]<br />\n[GMTRSRC]<br />\n[DTSPPLR]<br />\n[DTSPPLRNT]<br />\n[GMTRCPTRTC]<br />\n[DTCPTRDT]<br />\n[OBJECTID]",
+    "template_teaser": "Road ID: [DGTLRDTLSL]<br />\nRoad type: [FTRTP]<br />\nRoad condition: [RDSRFC]<br />\nObject ID: [OBJECTID]<br />\nLength: [SGMNTLNGTH]<br />\nRoad class: [ROAD_CLASS]",
     "template_full": "",
     "template_location": ""
   },
