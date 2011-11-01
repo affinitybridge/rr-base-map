@@ -6,12 +6,17 @@
     85.05112877980659
   ],
   "center": [
-    -121.26613363623436,
-    56.29479675289196,
-    11
+    -121.23454794287495,
+    56.30317856644366,
+    12
   ],
   "format": "png",
-  "interactivity": false,
+  "interactivity": {
+    "layer": "resource-roads",
+    "template_teaser": "[DGTLRDTLSL]<br />\n[FTRCD]<br />\n[FTRTP]<br />\n[SGMNTLNGTH]<br />\n[RDSRFC]<br />",
+    "template_full": "",
+    "template_location": ""
+  },
   "minzoom": 0,
   "maxzoom": 22,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -105,9 +110,9 @@
     },
     {
       "Datasource": {
-        "file": "/Users/tylor/Documents/MapBox/data/DRA_LINESP_DPC-roads-peace.zip"
+        "file": "/Users/tylor/Documents/MapBox/data/DRA_LINESP_DPC-roads-peace/DRA_LINESP_DPC_line.shp"
       },
-      "srs": "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs ",
+      "srs": "",
       "id": "resource-roads",
       "name": "resource-roads",
       "class": "resource-roads",
@@ -135,7 +140,7 @@
     },
     {
       "Datasource": {
-        "file": "/Users/tylor/Documents/MapBox/data/FADM_DIST-titles-simplified-fixed.zip"
+        "file": "/Users/tylor/Documents/MapBox/data/FADM_DIST-titles-simplified/FADM_DIST-titles-simplified-fixed.shp"
       },
       "srs": "",
       "id": "districts",
@@ -145,7 +150,7 @@
     },
     {
       "Datasource": {
-        "file": "/Users/tylor/Documents/MapBox/data/FADM_DIST-titles-simplified-fixed.zip"
+        "file": "/Users/tylor/Documents/MapBox/data/FADM_DIST-titles-simplified/FADM_DIST-titles-simplified-fixed.shp"
       },
       "srs": "",
       "id": "district-label",
@@ -174,7 +179,6 @@
       "geometry": "linestring"
     }
   ],
-  
   "name": "Resource Roads",
   "description": "A map of the resource roads",
   "attribution": "",
