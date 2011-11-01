@@ -130,6 +130,7 @@ wish to use OSM's land shapefiles. See the wiki for info:
   }
 }
 
+/*
 .district[ORG_UNIT='DPC'] {
-  polygon-pattern-file:url(../resources/textures/paperfolds_256.png.png);
-}
+  polygon-pattern-file:url(textures/paperfolds_256.png);
+}*/
