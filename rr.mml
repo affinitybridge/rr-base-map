@@ -6,16 +6,23 @@
     85.05112877980659
   ],
   "center": [
-    -121.23454794287495,
-    56.30317856644366,
-    12
+    -120.99271997809217,
+    56.20018361803834,
+    11
   ],
   "format": "png",
   "interactivity": {
     "layer": "resource-roads",
     "template_teaser": "[DGTLRDTLSL]<br />\n[FTRCD]<br />\n[FTRTP]<br />\n[SGMNTLNGTH]<br />\n[RDSRFC]<br />",
     "template_full": "",
-    "template_location": ""
+    "template_location": "",
+    "fields": [
+      "DGTLRDTLSL",
+      "FTRCD",
+      "FTRTP",
+      "SGMNTLNGTH",
+      "RDSRFC"
+    ]
   },
   "minzoom": 0,
   "maxzoom": 22,
