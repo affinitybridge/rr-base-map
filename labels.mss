@@ -54,7 +54,7 @@
   text-line-spacing: 5;
   [zoom>6][zoom<12] {
     text-dy: -4;
-    point-file: url(../resources/icons/circle2-7.png);
+    point-file: url(icons/circle2-7.png);
   }  
   [zoom=11] {
     text-size:12;
@@ -79,7 +79,7 @@
   text-size:9;
   [zoom>8][zoom<12] {
     text-dy: -4;
-    point-file: url(../resources/icons/circle-7.png);
+    point-file: url(icons/circle-7.png);
   }  
   [zoom=11] {
     text-size:10;
