@@ -155,12 +155,12 @@ Although not currently used on this project, if you'd like
 to play around with colour shading, create a file called
 ramp.txt with the following:
 
-0 184 222 230¬
-5 184 222 230¬
-6 46 154 88¬
-1000 0 168 3¬
-1800 155 155 155¬
-3010 215 244 244¬
+0 184 222 230
+5 184 222 230
+6 46 154 88
+1000 0 168 3
+1800 155 155 155
+3010 215 244 244
 
 Each point in the gradation maps an elevation to an RBG
 value, you can find statistic about the elevation by
