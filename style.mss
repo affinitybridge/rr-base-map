@@ -34,28 +34,31 @@ download from CloudMade's regional extracts here:
 Running the following commands will index and make these
 files more manageable as zips:
 
-  unzip british_columbia.shapefiles.zip
-  cd british_columbia.shapefiles
-  shapeindex *.shp
-  for i in *.shp; do \
+  $ unzip british_columbia.shapefiles.zip
+  $ cd british_columbia.shapefiles
+  $ shapeindex *.shp
+  $ for i in *.shp; do \
       zip `basename $i .shp` `basename $i shp`*; done
 
-OpenStreetMap data is used for:
+OpenStreetMap data is used for the following layers:
 
-- #highway
-- #highway-outline
-- #highway-label
-- #location
-- #natural
+- #highway - canada_canada_british_columbia_highway.zip
+- #highway-outline - canada_canada_british_columbia_highway.zip
+- #highway-label - canada_canada_british_columbia_highway.zip
+- #location - canada_canada_british_columbia_location.zip
+- #natural - canada_canada_british_columbia_natural.zip
 
 GeoBC
 -----
 
 Local data was downloaded from GeoBC, a service provided by
-the province: <http://geobc.gov.bc.ca/>. Click 'Download'->
-'Free Data', then 'Guest Users Enter Here' to access the
-catalogue. The easiest way to find data is to use their
-search feature.
+the province:
+
+  http://geobc.gov.bc.ca/
+
+Click 'Download' -> 'Free Data', then 'Guest Users Enter
+Here' to access the catalogue. The easiest way to find data
+is to use their search feature.
 
 Specifically, you need to search for data for the following
 layers:
