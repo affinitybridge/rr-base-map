@@ -48,6 +48,16 @@ OpenStreetMap data is used for the following layers:
 - #location - canada_canada_british_columbia_location.zip
 - #natural - canada_canada_british_columbia_natural.zip
 
+Finally, you need two versions of shoreline data for
+different zoom levels. You can usually find these by
+searching the web as they are somewhat common and generated
+from OpenStreetMap. Newer versions of TileMill may come
+with their own versions. Both are in 900913 Web Mercator
+projection.
+
+- #shoreline_300 - coarse data - http://tile.openstreetmap.org/shoreline_300.tar.bz2
+- #processed_p - highly detailed data - http://tile.openstreetmap.org/processed_p.tar.bz2
+
 GeoBC
 -----
 
@@ -172,15 +182,6 @@ newer links if these are unavailable:
 
 - #country_border - http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_0_boundary_lines_land.zip
 - #state_line - http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_1_states_provinces_lines_shp.zip
-
-Finally, you need two versions of shoreline data for
-different zoom levels. You can usually find these by
-searching the web as they are somewhat common and generated
-from OpenStreetMap. Newer versions of TileMill may come
-with their own versions.
-
-- #shoreline_300 - coarse data, usually named shoreline_300.zip
-- #processed_p - highly detailed data, usually named processed_p.zip and about a gigabyte in size
 
 ***********************************************************/
 
