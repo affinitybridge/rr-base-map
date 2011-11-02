@@ -109,7 +109,7 @@ The CGIAR server is really slow, so you might have to leave
 this running for a while. The following commands also take
 a little while and result in about 4GB of files.
 
-Once you have all the data, unzip and then merge into one
+Once you have all the data, unzip, place files in same directory, and then merge into one
 giant geoTIFF:
 
   $ gdal_merge.py -o bc.tif *.tif
@@ -134,6 +134,33 @@ Create a file called slope-ramp.txt with the following contents:
 Finally, generate shopeshade:
 
   $ gdaldem color-relief -co compress=lzw bc-slope-3785.tif slope-ramp.txt bc-slopeshade-3785.tif
+  
+This is all you need to basic shading, by using multiply
+and raster layer opacity you can create a pretty decent effect.
+
+Colour shading
+--------------
+
+Although not currently used on this project, if you'd like
+to play around with colour shading, create a file called
+ramp.txt with the following:
+
+0 184 222 230¬
+5 184 222 230¬
+6 46 154 88¬
+1000 0 168 3¬
+1800 155 155 155¬
+3010 215 244 244¬
+
+Each point in the gradation maps an elevation to an RBG
+value, you can find statistic about the elevation by
+running:
+
+  $ gdalinfo -stats bc-3785.tif
+
+To generate a color shaded GeoTIFF:
+
+  $ gdaldem color-relief bc-3785.tif ramp.txt bc-color-3785.tif
 
 Other
 -----
