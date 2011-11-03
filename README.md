@@ -64,7 +64,7 @@ GeoBC files are only available in BC Albers projection, TileMill should be able 
 
 In this version of the base map the Resource Roads are pulled from the Digital Road Atlas shapefile, in reality we are planning to pull this directly from PostGIS. For an example of what this configuration looks like, see example:
 
-![PostGIS configuration screen](postgis-config.png)
+![PostGIS configuration screen](https://github.com/affinitybridge/rr-base-map/raw/master/postgis-config.png)
 
 Contours
 --------
