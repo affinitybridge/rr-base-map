@@ -88,6 +88,12 @@ is more information about the projection
 <http://spatialreference.org/ref/epsg/3005/>, it may be
 convenient to reproject to 900913.
 
+In this version of the base map the Resource Roads are
+pulled from the Digital Road Atlas shapefile, in reality we
+are planning to pull this directly from PostGIS. For an
+example of what this configuration looks like, see an
+example in: postgis-config.png.
+
 Contours
 --------
 
