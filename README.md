@@ -20,6 +20,7 @@ OpenStreetMap
 ---------------
 
 A lot of the base data is from OpenStreetMap, which you can download from CloudMade's regional extracts here:
+
   > <http://downloads.cloudmade.com/americas/northern_america/canada/british_columbia/british_columbia.shapefiles.zip>
 
 Running the following commands will index and make these files more manageable as zips:
